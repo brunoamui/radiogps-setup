@@ -152,12 +152,13 @@ server pool.ntp.br       # Brazil (example)
 Update coordinates for your location:
 
 ```bash
-# In readsb config
+# In readsb config - replace with your actual coordinates
 DECODER_OPTIONS="--lat YOUR_LATITUDE --lon YOUR_LONGITUDE"
 
 # Get coordinates:
 # GPS: gpspipe -w -n 1 | jq '.lat, .lon'
 # Online: https://www.gps-coordinates.net/
+# Example: --lat -15.892123 --lon -47.796372 (Brasília, Brazil)
 ```
 
 ### Hardware Variations
