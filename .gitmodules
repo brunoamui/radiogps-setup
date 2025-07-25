@@ -1,0 +1,9 @@
+[submodule "plugins/temperature-monitor"]
+	path = plugins/temperature-monitor
+	url = https://github.com/brunoamui/cockpit-temp-plugin.git
+[submodule "plugins/adsb-monitor"]
+	path = plugins/adsb-monitor
+	url = https://github.com/brunoamui/cockpit-adsb-plugin.git
+[submodule "plugins/ntp-monitor"]
+	path = plugins/ntp-monitor
+	url = https://github.com/brunoamui/cockpit-ntp-plugin.git

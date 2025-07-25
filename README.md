@@ -35,6 +35,15 @@ See [HARDWARE.md](HARDWARE.md) for detailed connection diagrams and pinouts.
 
 ## Quick Setup
 
+### Repository Clone
+This repository uses git submodules for the Cockpit plugins:
+```bash
+git clone https://github.com/brunoamui/radiogps-setup.git
+cd radiogps-setup
+git submodule update --init --recursive
+```
+
+### System Setup Steps
 1. **Hardware Setup**: Follow [HARDWARE.md](HARDWARE.md)
 2. **Base System**: Follow [01-BASE-SYSTEM.md](docs/01-BASE-SYSTEM.md)
 3. **GPS Setup**: Follow [02-GPS-SETUP.md](docs/02-GPS-SETUP.md)
@@ -49,6 +58,21 @@ Run the automated setup script:
 ```bash
 curl -sSL https://raw.githubusercontent.com/brunoamui/radiogps-setup/main/setup.sh | bash
 ```
+
+## Cockpit Plugins
+
+Custom Cockpit plugins are included as git submodules in the `plugins/` directory:
+
+- **Temperature Monitor**: CPU/GPU temperature monitoring with graphs
+- **ADS-B Monitor**: Real-time aircraft tracking display  
+- **NTP Monitor**: NTP server status and time source information
+
+To deploy all plugins:
+```bash
+./scripts/deploy-plugins.sh
+```
+
+See [plugins/README.md](plugins/README.md) for detailed plugin information.
 
 ## Configuration Files
 
