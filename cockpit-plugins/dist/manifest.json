@@ -1,0 +1,12 @@
+{
+    "requires": {
+        "cockpit": "137"
+    },
+
+    "tools": {
+        "index": {
+            "label": "Temperature Monitor",
+            "path": "index.html"
+        }
+    }
+}
