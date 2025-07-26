@@ -1,5 +1,7 @@
 # RadioGPS Setup Documentation
 
+![RadioGPS Mission Control](radiogps-mission-control.png)
+
 Complete setup documentation for recreating the RadioGPS Raspberry Pi system from a clean Raspbian image.
 
 ## System Overview
